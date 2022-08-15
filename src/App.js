@@ -7,8 +7,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Ramona Customs, prendas personalizadas.
         </p>
+        <a href="https://www.instagram.com/ramona_custom/">Seguinos</a>
         <a
           className="App-link"
           href="https://reactjs.org"
