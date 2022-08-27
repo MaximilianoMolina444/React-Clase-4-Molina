@@ -15,14 +15,11 @@ function App() {
   let producto2 = {img:"https://i.ibb.co/XJw53Sq/Sin-t-tulo3.jpg" ,id: 101, name: "producto2", price:2000, stock:7, initital:1};
   let producto3 = {img:"https://i.ibb.co/TqkK0wN/Sin-t-tulo4.jpg" ,id: 102, name: "producto3", price:300, stock:3, initital:1};
   let greeting = {saludo: "Bienvenidos a mi proyecto"};
-
-//  function onAdd(){
-//    if (contador <= item.stock) {
-//      alert("hay stock")
-//    } else {
-//      alert("no hay stock")
-//    }
-//  }
+  
+  function onAdd(){
+    console.log("agregado al carrito")
+  };
+     
   return (
     <div className="App">
       <NavBar/>
@@ -31,11 +28,11 @@ function App() {
       <Carrousel/>
       <Titulos item={tituloProductos}/>
       <Productos item={producto1}/>
-      <ItemCount item={producto1}/>
+      <ItemCount item={producto1} initial={1} stock= {5} onAdd={onAdd}/>
       <Productos item={producto2}/>
-      <ItemCount item={producto2}/>
+      <ItemCount item={producto2} initial={1} stock= {5} OnAdd={onAdd}/>
       <Productos item={producto3}/>
-      <ItemCount item={producto3}/>
+      <ItemCount item={producto3} initial={1} stock= {5} onAdd={onAdd}/>
       <Footer/>
     </div>
   );
